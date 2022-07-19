@@ -1421,7 +1421,7 @@ public abstract class ExchangeSession {
          */
         public boolean answered;
         /**
-         * Message flag: fowarded.
+         * Message flag: forwarded.
          */
         public boolean forwarded;
 
@@ -1628,7 +1628,7 @@ public abstract class ExchangeSession {
                 messageList.cachedMimeContent = mimeContent;
                 messageList.cachedMimeMessage = mimeMessage;
             }
-            // drop curent message body to save memory
+            // drop current message body to save memory
             mimeMessage = null;
             mimeContent = null;
         }
@@ -1754,7 +1754,7 @@ public abstract class ExchangeSession {
     }
 
     /**
-     * Message list, includes a single messsage cache
+     * Message list, includes a single message cache
      */
     public static class MessageList extends ArrayList<Message> {
         /**
@@ -3304,7 +3304,7 @@ public abstract class ExchangeSession {
 
     /**
      * Possible values are: normal, personal, private, and confidential.
-     * @param sensitivity Exchange sensivity
+     * @param sensitivity Exchange sensitivity
      * @return event class
      */
     protected String convertClassFromExchange(String sensitivity) {
